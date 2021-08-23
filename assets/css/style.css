@@ -10,8 +10,15 @@
     --tertiary-color: #000000;
 }
 
+html { 
+    background: url("../images/fullstack-hero.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
 body {
-    background-color: var(--secondary-color);
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
@@ -88,7 +95,6 @@ section {
 
 /* hero style start */
 .hero {
-    background-image: url("../images/fullstack-hero.jpg");
     background-size: cover;
     background-position: center;
     display: flex;
@@ -143,14 +149,13 @@ section {
     border: 3px solid var(--tertiary-color);
 }
 
-
 .project-info {
     flex: 2 70%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    border: 1px solid var(--tertiary-color);
 }
-
 
 /* work style end */
 
@@ -164,8 +169,18 @@ section {
     font-size: 20px;
     line-height: 1.2;
     color: var(--primary-color);
+    justify-content: space-between;
+    flex-direction: column;
+    display: inline;
     /* visuals */
     text-shadow: -5px -5px 15px rgba(255, 255, 255, 0.5);
+}
+
+.aboutme-text {
+    flex: 2 70%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 /* about me style end */
@@ -177,7 +192,24 @@ section {
     margin: 3.5%;
     font-size: 20px;
     line-height: 1.2;
+    display: inline;
     color: var(--primary-color);
     /* visuals */
     text-shadow: -5px -5px 15px rgba(255, 255, 255, 0.5);
+}
+
+.contact-me h3 {
+    padding: 10px 30px;
+    background-color: var(---primary-color);
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+a {
+    color: var(--primary-color);
+}
+
+a:link {
+    text-decoration: none;
 }
