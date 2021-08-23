@@ -7,7 +7,7 @@
 :root {
     --primary-color: #ffffff;
     --secondary-color: #4d4d4d;
-    --tertiary-color: #002b55;
+    --tertiary-color: #000000;
 }
 
 body {
@@ -93,23 +93,63 @@ section {
     background-position: center;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     align-items: flex-start;
 }
 
 .hero h1 {
     width: 40%;
-    text-align: right;
+    text-align: left;
     margin: 3.5%;
-    font-size: 20px;
-    line-height: 1.2;S
+    font-size: 40px;
+    line-height: 1.2;
+    color: var(--primary-color);
+    /* visuals */
+    text-shadow: -5px -5px 15px rgba(255, 255, 255, 0.5);
 }
 
 .hero p {
-
+    padding: 20px;
+    width: 40%;
+    margin: 3.5%;
+    color: var(--primary-color);
+    /* visuals */
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
 /* work style start */
+.work {
+    width: 40%;
+    text-align: left;
+    margin: 3.5%;
+    font-size: 20px;
+    line-height: 1.2;
+    color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    /* visuals */
+    text-shadow: -5px -5px 15px rgba(255, 255, 255, 0.5);
+}
 
+.project {
+    margin: 25px auto;
+    padding-bottom: 50px;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    border: 3px solid var(--tertiary-color);
+}
+
+
+.project-info {
+    flex: 2 70%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
 
 
 /* work style end */
@@ -117,12 +157,27 @@ section {
 
 
 /* about me style start */
-
+.about-me {
+    width: 40%;
+    text-align: left;
+    margin: 3.5%;
+    font-size: 20px;
+    line-height: 1.2;
+    color: var(--primary-color);
+    /* visuals */
+    text-shadow: -5px -5px 15px rgba(255, 255, 255, 0.5);
+}
 
 /* about me style end */
 
-
-
-
-
-
+/* contact me style start */
+.contact-me {
+    width: 40%;
+    text-align: left;
+    margin: 3.5%;
+    font-size: 20px;
+    line-height: 1.2;
+    color: var(--primary-color);
+    /* visuals */
+    text-shadow: -5px -5px 15px rgba(255, 255, 255, 0.5);
+}
