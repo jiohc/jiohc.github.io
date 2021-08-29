@@ -97,6 +97,12 @@ header nav ul li a:hover {
     /* visuals */
     text-shadow: 5px 5px 10px rgba(255, 255, 255, 0.5);
 }
+
+.center {
+    display: block;
+    margin: auto;
+
+}
     
 /* header style ends */
 
@@ -256,7 +262,13 @@ a:link {
   
     header nav ul li a {
       font-size: 20px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: auto;
     }
-  }
-  
-  
+
+    .intro {
+        margin-top: 30px;
+    }
+}
